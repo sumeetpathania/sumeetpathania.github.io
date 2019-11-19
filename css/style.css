@@ -447,7 +447,7 @@ Home
     z-index: 3;
 }
 .home-carousel .first-slide {
-	background-image: url(http://placehold.it/1200x800);
+	background-image: url(../img/forest.jpg);
 }
 .home-carousel .second-slide {
 	background-image: url(http://placehold.it/1200x800);
