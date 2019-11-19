@@ -306,7 +306,7 @@ Home
 	position: relative;
 	height: 100%;
 	min-height: 550px;
-	background-image: url(http://placehold.it/1200x800);
+	background-image: url("forest.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
