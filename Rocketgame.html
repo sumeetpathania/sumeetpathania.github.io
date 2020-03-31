@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- SITE TITLE -->
+    <title>SUMEET -Building a DQN</title>
+    <meta name="description" content="Bamboo - Personal Parallax Portfolio Template">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="icon" src="img/favicon.ico">
+
+	<!-- Touch Icons - iOS and Android 2.1+ -->
+ 	<link rel="apple-touch-icon" href="img/apple-favicon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone4.png" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <!-- Loader -->
+    <div class="loader-con">
+        <div class="spinner center">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!-- End Loader -->
+
+    <!-- HOME -->
+    <section id="home" class="home-1 parallax one-page-section">
+        <div class="page-table">
+            <div class="table-cell text-center">
+                <h1>Playing Pygames With DQNs</h1>
+          <a href="#about" class="scroll home-s-btn hor-center"><span class="dot center"></span></a>
+            </div>
+        </div>
+    </section>
+    <!-- END HOME -->
+	
+
+  <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="description col-md-6 col-sm-4 col-xs-12">
+            <h2>Playing Pygames With DQNs</h2>
+
+            <p>
+              I used Deep Q Networks to create an algorithm 
+			  that can play a variety of games. 
+            </p> 
+            <p> 
+                DQNs are a combination of reinforcement learning 
+				and deep neural networks. They use neural networks to approximate 
+				Q values which is then used by the reinforcement algorthim to take action depending
+				on the epsilon greedy strategy and maximium reward given for each action. 
+            </p>
+            <p>
+              View More in-depth explanation
+              <a target="_blank" href="#">here</a>.<!-- insert link here-->
+            </p>
+          </div>
+          <div class="description col-md-6 col-sm-4 col-xs-12">
+            
+                <img src="img/dqnpong.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; padding-top: 50px; padding-left: 15px;"/>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 40px">
+            <div class="description col-md-6 col-sm-4 col-xs-12">
+                <img src="img/reinforcement.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 100%; padding-top: 20px; padding-right: 15px;"/>
+                
+                <img src="img/qvalue.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; padding-top: 15px; padding-right: 15px;"/>
+                <p style="text-align: center; padding-top: 10px">
+                   Q-table Vs Deep Q learning
+                  </p>
+            </div>
+          <div class="description col-md-6 col-sm-4 col-xs-12">
+            <h2>Reinforcement learning and Q-Tables</h2>
+
+            <p>
+              Reinforcement learning is a type of AI that uses a reward and punishment system 
+			  where the goal is to maximize the reward received. There are 4 main components 
+			  to this type of learning:<strong> The agent, environment, action, and reward. </strong>
+			  The agent in RL is the component that makes the decision of what action to take. The actions are all the
+			  possible things the agent can do. For example, run, jump, walk, do nothing. 
+			  The environment is typically a set of states, and the reward is what will motivate our agent to take good actions. 
+			  <strong>Q-Learning</strong>
+              <br/>
+			  <br/>
+			  Q learning is a way for the agent to decide what action to take. At first,
+			  the agent has no idea what to do. This is where we use Q-Tables, in order to find the "quality" of each action.
+			  However, for Atari games we can't calculate the quality of each movement since there are way too many. Thus,
+			  we use a neural networks to approximate the Q-values which the agent will base its actions off.
+            </p>
+            <p>
+              This in practice will have take a smaller toll on our network and reduce required computational power.    
+            </p>
+            <p>
+              You can also read DeepMind's research paper
+              <a target="_blank" href="https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf">here</a>.
+              <br/>
+            </p>
+          </div>       
+        </div>
+
+        <div class="row" style="margin-top: 40px">
+            <div class="description col-md-6 col-sm-4 col-xs-12">
+				<br/>
+                <h2>Conclusion</h2>
+                <p>
+				<br/>
+                    Deep reinforcement learning is surrounded by mountains and mountains of hype. And 
+					for good reasons! Reinforcement learning is an incredibly general paradigm, and in principle,
+					a robust and performant RL system should be great at everything. Merging this paradigm with the
+					empirical power of deep learning is an obvious fit. Deep RL is one of the closest things that looks
+					anything like AGI, and that&apos;s the kind of dream that fuels billions of dollars of funding.
+					<br/>
+					Unfortunately, it doesn&apos;t really work too well yet.
+					<br/>
+					Now, I believe it can work. If I
+					didn&apos;t believe in reinforcement learning, I wouldn&apos;t be working on it. But there many 
+					problems we still need to tackle. Mabye you can solve some of them one day!
+                </p>
+            </div>
+            <div class="description col-md-6 col-sm-4 col-xs-12">
+                    <img src="img/limits.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 100%; padding-top: 100px; padding-right: 15px;"/>
+                </div>
+        </div>
+        
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <a href="index.html" class="effect footer-title">Sumeet</a>
+
+                <div class="footer-social">
+                    <ul class="footer-social-list">
+                        <li><a class="effect" href="https://www.youtube.com/channel/UC31px9O2PkWAbBGeeDGvUcA?view_as=subscriber"><i class="fa fa-youtube"></i></a></li>
+                        <li><a class="effect" href="https://www.linkedin.com/in/sumeet-pathania-93b052194/"><i class="fa fa-linkedin"></i></a></li>
+						<li><a class="effect" href="https://medium.com/@sumeetpathania2003"><i class="fa fa-medium"></i></a></li>
+						<li><a class="effect" href="https://tks.life/profile/sumeet.pathania"><i class="fa fa-laptop"></i></a></li>
+					</ul>
+                </div>
+
+                <p class="copy-text">Sumeet &copy; 2019. all right reserved</p>
+            </div> <!-- end row -->
+        </div> <!-- End Container -->
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-up effect">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- End Scroll To Top Button -->
+                            
+    <!-- js placed at the end of the document so the pages load faster -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- jQuery Typer JS -->
+    <script src="js/jquery.typer.js"></script>
+    <!-- jQuery Images Loaded JS -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- jQuery Filterizr JS -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- Custom js -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
